@@ -11,6 +11,10 @@ def read(file):
 def wr(data, num):
     file = op(os.path.join(os.getcwd(), "Data", "processed", f"processed{num}.txt"), "w")
     file.write(data)
-    cl()
+    cl(file)
+def wrSum(data, num):
+    file = op(os.path.join(os.getcwd(), "Data", "summary", f"summary{num}.txt"), "w")
+    file.write(data)
+    cl(file)
 def cl(file):
     file.close()

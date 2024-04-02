@@ -8,6 +8,8 @@ def getProcData(url):
     html = requests.get(url)
     data = BeautifulSoup(html.content, "lxml")
     text = ""
+    for body in data.find_all("h1"):
+        text += body.text
     for body in data.find_all("p"):
         text += body.text
     return text
