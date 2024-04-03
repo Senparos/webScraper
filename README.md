@@ -40,7 +40,7 @@ To run this program, you must have the following:\
 
 ## Using the program
 
-    1. create a file named "input.txt" and put any number of urls that lead to news articles(as mentioned above, this has been tested with NPR, CNN, and Fox News), keeping links on their own lines
+    1. open the file "raw.txt" which can be found in the \Data\raw directory, and put any number of urls that lead to news articles(as mentioned above, this has been tested with NPR, CNN, and Fox News), keeping links on their own lines
     2. launch Anaconda Prompt(Miniconda3)
     3. use the following command to activate the environment needed to run this program: conda activate requirements
     4. run the program by typing the following into the Anaconda prompt: python scraper.py
