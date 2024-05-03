@@ -1,4 +1,4 @@
-# Simple Python Web Scraper v2.0.1
+# Simple Python Web Scraper v2.1.0
 
 ## Description
 
@@ -36,6 +36,7 @@ To run this program, you must have the following:\
     9. select "create new secret key"
     10. name the key using the box provided and select "Create secret key"
     11. open the file "apiKey.txt" found in the root of the project and replace the "KEY_PLACEHOLDER" with your API key
+    12. (optional) open "text_to_html.py" and change the "NUM_ARTICLES" constant to reflect the amount of articles that will be scraped
 
 
 ## Using the program
@@ -46,3 +47,4 @@ To run this program, you must have the following:\
     4. run the program by typing the following into the Anaconda prompt: python scraper.py
     5. during execution, the program will create an output for each news article, which is named output#.txt, where the # represents which link it corresponds to
     6. the program will also generate a summary of each article, which can be found in the \Data\summary folder and will be named summary#.txt, where # represents which link the summary corresponds to
+    7. (optional) run "text_to_html.py" to generate a simple html webpage that contains all the article summaries from the scraper.
