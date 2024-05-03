@@ -10,6 +10,7 @@ def getProcData(url):
     text = ""
     for body in data.find_all("h1"):
         text += body.text
+    text += "\n"
     for body in data.find_all("p"):
         text += body.text
     return text

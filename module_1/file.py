@@ -13,8 +13,12 @@ def wr(data, num):
     file.write(data)
     cl(file)
 def wrSum(data, num):
+    fileProc = op(os.path.join(os.getcwd(), "Data", "processed", f"processed{num}.txt"), "r")
+    title = fileProc.readline()
     file = op(os.path.join(os.getcwd(), "Data", "summary", f"summary{num}.txt"), "w")
+    file.write(title.strip() + "\n")
     file.write(data)
     cl(file)
+    cl(fileProc)
 def cl(file):
     file.close()
